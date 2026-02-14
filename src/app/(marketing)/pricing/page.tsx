@@ -1,3 +1,4 @@
+import { PricingCardProps } from '@/types/types';
 import { CheckCircle2, XCircle } from 'lucide-react';
 import Link from 'next/link';
 
@@ -8,7 +9,7 @@ export default function PricingPage() {
         <h1 className='text-4xl font-bold mb-4 text-white'>
           Simple, Transparent Pricing
         </h1>
-        <p className='text-xl text-gray-400 dark:text-gray-300'>
+        <p className='text-xl text-gray-800 dark:text-gray-300'>
           Choose the plan that&apos;s right for you and your team
         </p>
       </div>
@@ -87,23 +88,6 @@ export default function PricingPage() {
       </div>
     </div>
   );
-}
-
-interface PricingFeature {
-  name: string;
-  included: boolean;
-}
-
-interface PricingCardProps {
-  title: string;
-  price: string;
-  period?: string;
-  description: string;
-  features: PricingFeature[];
-  buttonText: string;
-  buttonLink: string;
-  highlighted?: boolean;
-  badge?: string;
 }
 
 function PricingCard({
