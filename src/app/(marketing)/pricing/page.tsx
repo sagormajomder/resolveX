@@ -125,9 +125,9 @@ function PricingCard({
         {features.map((feature, index) => (
           <li key={index} className='flex items-start'>
             {feature.included ? (
-              <CheckCircle2 className='h-5 w-5 text-green-300 mr-2 flex-shrink-0' />
+              <CheckCircle2 className='h-5 w-5 text-green-300 mr-2 shrink-0' />
             ) : (
-              <XCircle className='h-5 w-5 text-gray-500 mr-2 flex-shrink-0' />
+              <XCircle className='h-5 w-5 text-gray-500 mr-2 shrink-0' />
             )}
             <span
               className={
